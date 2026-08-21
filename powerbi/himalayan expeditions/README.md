@@ -43,10 +43,10 @@ Nepal accounted for 20,704 participant records, representing 23.4% of the total,
 ![Global Participation](images/04-global-participation.png)
 
 # Tools and Technologies
-- Power BI Desktop for data modelling, DAX, visualisation, bookmarks, navigation, and report interactions    
-- Power Query for importing, cleaning, transforming, and validating source data    
-- DAX for activity, success, participation, and risk measures    
-- Performance Analyzer for visual performance testing    
+- **Power BI Desktop** for data modelling, DAX, visualisation, bookmarks, navigation, and report interactions    
+- **Power Query** for importing, cleaning, transforming, and validating source data    
+- **DAX** for activity, success, participation, and risk measures    
+- **Performance Analyzer** for visual performance testing    
 
 # Data Preparation
 The analytical model uses three main source tables:    
@@ -65,7 +65,7 @@ Key preparation steps included:
 - Standardising country names for geographic mapping while preserving original citizenship values    
 
 # Data Quality Decisions
-Several data-quality issues required explicit decisions:    
+**Several data-quality issues required explicit decisions:**   
 - Four expedition identifiers were reused across different years, so relationships were not created using `Expedition ID` alone.    
 - A composite `ExpeditionKey` was created using expedition identifier and year.    
 - 89 member records without a safe expedition assignment were excluded from participant-level analysis.    
@@ -75,11 +75,13 @@ Several data-quality issues required explicit decisions:
 - Unique climbers were not estimated because the data does not contain a reliable global person identifier.    
 
 # Data Model
-The model follows a simple one-to-many structure:    
+**The model follows a simple one-to-many structure:**    
 
 ``Years[Year] 1 -> * Expeditions[Expedition Year]``    
 ``Peaks[Peak ID] 1 -> * Expeditions[Peak ID]``    
 ``Expeditions[ExpeditionKey] 1 -> * Members[ExpeditionKey]``    
+
+![Data Model](images/05-model-view.png)
 
 All relationships are active and use single-direction filtering.    
 
