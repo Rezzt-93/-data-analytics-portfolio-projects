@@ -1,5 +1,6 @@
-# Himalayan Expeditions Analytics Dashboard
-A four-page Power BI dashboard exploring the historical development of Himalayan expeditions, peak popularity, expedition success, recorded risk, and the global participation of expedition members.
+# Himalayan Expedition Analytics
+A four-page interactive Power BI dashboard exploring the historical development of Himalayan expeditions, peak popularity, expedition success, recorded risk, and global participation.
+The dashboard includes bookmark-based navigation, slide-out filter panels, reset controls, dynamic parameters, interactive maps, and custom tooltips.
 
 # Project Overview
 **The project was created to answer four main questions:**  
