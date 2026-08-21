@@ -15,7 +15,7 @@ A four-page Power BI dashboard exploring the historical development of Himalayan
 `Global Participation`    
 # Key Insights
 - **Expedition activity shifted toward larger teams.**  
-Expedition volume peaked in 2009 with 420 expeditions and 2,865 participants. In contrast, participant volume peaked in 2023 with 4,379 participants across only 274 expeditions, increasing the average reported expedition size from approximately 6.8 to 16.0 participants.
+Expedition volume peaked in 2009 with 420 expeditions and 2,865 participants. In contrast, participant volume peaked in 2023 with 4,379 participants across only 274 expeditions, increasing the average reported expedition size from approximately **6.8** to **16.0** participants.
 
 - **Everest dominated expedition activity, while Ama Dablam combined popularity with strong success.**  
 Everest accounted for 2,338 expeditions, representing 20.6% of all expedition activity. Ama Dablam ranked second with 1,576 expeditions and achieved the highest success rate among peaks with at least 30 expeditions, reaching 71.3%.
@@ -25,6 +25,7 @@ Everest recorded the most deaths, but its Above-Base-Camp Death Rate was 1.31%. 
 
 - **Nepal dominated both participation and summit performance.**  
 Nepal accounted for 20,704 participant records, representing 23.4% of the total. It also recorded 14,169 successful participant records and achieved a 69.4% Member Summit Rate, compared with approximately 31% to 38% among the other most represented countries.  
+<!-- The dataset ends in June 2024. Therefore, 2024 represents a partial year and should not be compared directly with complete calendar years. Participant records represent person-expedition entries rather than unique climbers. -->
 
 # Dashboard Preview
 
