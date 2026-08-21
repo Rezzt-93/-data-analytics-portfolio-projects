@@ -29,25 +29,25 @@ The final report contains four pages:
 ![Global Participation](images/04-global-participation.png)
 
 ## Tools and Technologies
-Power BI Desktop for data modelling, DAX, visualisation, bookmarks, navigation, and report interactions
-Power Query for importing, cleaning, transforming, and validating source data
-DAX for activity, success, participation, and risk measures
-Performance Analyzer for visual performance testing
+Power BI Desktop for data modelling, DAX, visualisation, bookmarks, navigation, and report interactions    
+Power Query for importing, cleaning, transforming, and validating source data    
+DAX for activity, success, participation, and risk measures    
+Performance Analyzer for visual performance testing    
 
 ## Data Preparation
-The analytical model uses three main source tables:
+The analytical model uses three main source tables:    
 `Peaks`
 `Expeditions`
-`Members`
-Key preparation steps included:
-Correcting CSV parsing
-Selecting only fields required for the analysis
-Assigning appropriate text, numeric, logical, and date types
-Renaming source fields with clear business names
-Creating a unique `ExpeditionKey`
-Creating a `Years` dimension
-Creating ordered `Season` and `Height Band` categories
-Standardising country names for geographic mapping while preserving original citizenship values
+`Members`    
+Key preparation steps included:    
+Correcting CSV parsing    
+Selecting only fields required for the analysis    
+Assigning appropriate text, numeric, logical, and date types    
+Renaming source fields with clear business names    
+Creating a unique `ExpeditionKey`    
+Creating a `Years` dimension    
+Creating ordered `Season` and `Height Band` categories    
+Standardising country names for geographic mapping while preserving original citizenship values    
 
 ## Data Quality Decisions
 Several data-quality issues required explicit decisions:
