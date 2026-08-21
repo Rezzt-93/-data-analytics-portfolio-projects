@@ -8,10 +8,10 @@ Which peaks attracted the most expeditions and achieved the highest success rate
 Which peaks combined expedition success with elevated recorded risk?    
 Where did registered expedition participants come from?    
 The final report contains four pages:    
-'Expedition Trends'    
-'Peak Popularity & Success'    
-'Risk & Safety'    
-'Global Participation'    
+`Expedition Trends`      
+`Peak Popularity & Success`    
+`Risk & Safety`    
+`Global Participation`    
 
 ## Dashboard Preview
 
