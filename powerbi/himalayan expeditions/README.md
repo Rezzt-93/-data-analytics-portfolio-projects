@@ -1,7 +1,7 @@
 # Himalayan Expeditions Analytics Dashboard
 A four-page Power BI dashboard exploring the historical development of Himalayan expeditions, peak popularity, expedition success, recorded risk, and the global participation of expedition members.
 
-## Project Overview
+# Project Overview
 The project was created to answer four main questions:    
 How has Himalayan expedition activity changed over time?    
 Which peaks attracted the most expeditions and achieved the highest success rates?    
@@ -14,7 +14,7 @@ The final report contains four pages:
 `Risk & Safety`    
 `Global Participation`    
 
-## Dashboard Preview
+# Dashboard Preview
 
 ## 1. Expedition Trends
 ![Expedition Trends](images/01-expedition-trends.png)
@@ -28,13 +28,13 @@ The final report contains four pages:
 ## 4. Global Participation
 ![Global Participation](images/04-global-participation.png)
 
-## Tools and Technologies
+# Tools and Technologies
 Power BI Desktop for data modelling, DAX, visualisation, bookmarks, navigation, and report interactions    
 Power Query for importing, cleaning, transforming, and validating source data    
 DAX for activity, success, participation, and risk measures    
 Performance Analyzer for visual performance testing    
 
-## Data Preparation
+# Data Preparation
 The analytical model uses three main source tables:    
 `Peaks`    
 `Expeditions`    
@@ -50,7 +50,7 @@ Creating a `Years` dimension
 Creating ordered `Season` and `Height Band` categories    
 Standardising country names for geographic mapping while preserving original citizenship values    
 
-## Data Quality Decisions
+# Data Quality Decisions
 Several data-quality issues required explicit decisions:    
 Four expedition identifiers were reused across different years, so relationships were not created using `Expedition ID` alone.    
 A composite `ExpeditionKey` was created using expedition identifier and year.    
@@ -60,7 +60,7 @@ Missing values were preserved as nulls and were not automatically replaced with 
 Multiple, uncertain, or missing citizenship values were retained in the source field but excluded from geographic mapping.    
 Unique climbers were not estimated because the data does not contain a reliable global person identifier.    
 
-## Data Model
+# Data Model
 The model follows a simple one-to-many structure:    
 ``Years[Year] 1 -> * Expeditions[Expedition Year]``    
 ``Peaks[Peak ID] 1 -> * Expeditions[Peak ID]``    
@@ -68,35 +68,35 @@ The model follows a simple one-to-many structure:
 
 All relationships are active and use single-direction filtering.    
 
-## Business Definitions
+# Business Definitions
 ## 1. Successful Expedition
-An expedition is classified as successful when:
-At least one recorded route was successful
-The success was not marked as claimed but unrecognised
-Disputed successes remained included
+An expedition is classified as successful when:    
+At least one recorded route was successful    
+The success was not marked as claimed but unrecognised    
+Disputed successes remained included    
 ## 2. Participant Record
-One row in `Members` represents one registered person-expedition record. The same person may appear in multiple expeditions, so participant records are not treated as unique climbers.
+One row in `Members` represents one registered person-expedition record. The same person may appear in multiple expeditions, so participant records are not treated as unique climbers.    
 ## 3. Above-Base-Camp Participant
-A registered participant who:
-Reached base camp
-Was not restricted to base camp only
-Conducted activity above base camp
+A registered participant who:    
+-Reached base camp    
+-Was not restricted to base camp only    
+-Conducted activity above base camp    
 ## 4. Member Summit Rate
 ```text
 Successful Participant Records / Above-Base-Camp Participants
 ```
-This denominator was selected instead of documented summit bids because it provides a broader and more interpretable population of participants exposed to higher-altitude activity.
+This denominator was selected instead of documented summit bids because it provides a broader and more interpretable population of participants exposed to higher-altitude activity.    
 ## 5. Above-Base-Camp Death Rate
 ```text
 Recorded Deaths Above Base Camp / Above-Base-Camp Participants
 ```
-The measure is an exposure-based recorded mortality rate. It should not be interpreted as the exact probability of death for an individual climber.
+The measure is an exposure-based recorded mortality rate. It should not be interpreted as the exact probability of death for an individual climber.    
 ## 6. Deaths per 100 Summits
 ```text
 Total Deaths / Total Successful Summiters * 100
 ```
-This ratio supports comparison with commonly reported mountaineering statistics. It is not a probability and may exceed 100 when deaths outnumber successful summit records.
-## Key Measures
+This ratio supports comparison with commonly reported mountaineering statistics. It is not a probability and may exceed 100 when deaths outnumber successful summit records.    
+# Key Measures
 ## Activity
 `Total Expeditions`
 `Total Members`
@@ -139,7 +139,7 @@ Above-Base-Camp Death Rate: 1.25%
 Deaths per 100 Summits: 3.11
 ```
 The default report view is filtered to 1950-2024, while users can manually extend the range to earlier years.
-## Report Pages
+# Report Pages
 ## Expedition Trends
 Focuses on the historical development of Himalayan mountaineering:
 Expeditions and participants over time
