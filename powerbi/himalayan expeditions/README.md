@@ -3,10 +3,10 @@ A four-page Power BI dashboard exploring the historical development of Himalayan
 
 # Project Overview
 The project was created to answer four main questions:    
--How has Himalayan expedition activity changed over time?    
--Which peaks attracted the most expeditions and achieved the highest success rates?    
--Which peaks combined expedition success with elevated recorded risk?    
--Where did registered expedition participants come from?    
+- How has Himalayan expedition activity changed over time?    
+- Which peaks attracted the most expeditions and achieved the highest success rates?    
+- Which peaks combined expedition success with elevated recorded risk?    
+- Where did registered expedition participants come from?    
 
 The final report contains four pages:    
 `Expedition Trends`      
@@ -41,24 +41,24 @@ The analytical model uses three main source tables:
 `Members`        
 
 Key preparation steps included:    
--Correcting CSV parsing    
--Selecting only fields required for the analysis    
--Assigning appropriate text, numeric, logical, and date types    
--Renaming source fields with clear business names    
--Creating a unique `ExpeditionKey`    
--Creating a `Years` dimension    
--Creating ordered `Season` and `Height Band` categories    
--Standardising country names for geographic mapping while preserving original citizenship values    
+- Correcting CSV parsing    
+- Selecting only fields required for the analysis    
+- Assigning appropriate text, numeric, logical, and date types    
+- Renaming source fields with clear business names    
+- Creating a unique `ExpeditionKey`    
+- Creating a `Years` dimension    
+- Creating ordered `Season` and `Height Band` categories    
+- Standardising country names for geographic mapping while preserving original citizenship values    
 
 # Data Quality Decisions
 Several data-quality issues required explicit decisions:    
--Four expedition identifiers were reused across different years, so relationships were not created using `Expedition ID` alone.    
--A composite `ExpeditionKey` was created using expedition identifier and year.    
--89 member records without a safe expedition assignment were excluded from participant-level analysis.    
--4 expedition records with inconsistent participant counts were retained but flagged and excluded from measures that depend on those counts.    
--Missing values were preserved as nulls and were not automatically replaced with zero.    
--Multiple, uncertain, or missing citizenship values were retained in the source field but excluded from geographic mapping.    
--Unique climbers were not estimated because the data does not contain a reliable global person identifier.    
+- Four expedition identifiers were reused across different years, so relationships were not created using `Expedition ID` alone.    
+- A composite `ExpeditionKey` was created using expedition identifier and year.    
+- 89 member records without a safe expedition assignment were excluded from participant-level analysis.    
+- 4 expedition records with inconsistent participant counts were retained but flagged and excluded from measures that depend on those counts.    
+- Missing values were preserved as nulls and were not automatically replaced with zero.    
+- Multiple, uncertain, or missing citizenship values were retained in the source field but excluded from geographic mapping.    
+- Unique climbers were not estimated because the data does not contain a reliable global person identifier.    
 
 # Data Model
 The model follows a simple one-to-many structure:    
