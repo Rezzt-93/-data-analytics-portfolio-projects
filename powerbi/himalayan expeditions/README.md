@@ -168,7 +168,7 @@ Uses the map as an interactive country selector:
 - Successful participant records and member summit rate    
 - Most frequent peaks for the selected country    
 - Participation trend for the selected country    
-## User Experience Features
+# User Experience Features
 - Page navigator across all four report pages    
 - Slide-out filter panels built with bookmarks and the Selection pane    
 - Page-level reset buttons    
@@ -177,7 +177,7 @@ Uses the map as an interactive country selector:
 - Dynamic minimum sample thresholds for selected peak-level analysis    
 - Custom report-page tooltips for peaks and countries    
 - Controlled visual interactions to preserve analytical context    
-## Limitations
+# Limitations
 - The same person may appear in multiple expeditions, so participant records are not unique climbers.  
 - Detailed hired-personnel records may be less complete than expedition-level aggregates.  
 - Some historical dates, birth years, summit-bid outcomes, and citizenship values are missing or uncertain.  
@@ -185,7 +185,7 @@ Uses the map as an interactive country selector:
 - `Deaths per 100 Summits` is a comparison ratio, not an individual probability of death.  
 - Trends coinciding with external events should not be interpreted as causal without additional evidence.  
 - The completeness of the latest year should be checked before interpreting end-of-series declines.  
-## Performance
+# Performance
 The report was tested with Power BI Performance Analyzer. Visuals loaded in under approximately 850 ms during testing.   
 DAX query execution was fast, while most elapsed time was associated with visual rendering and other client-side operations.  
 
