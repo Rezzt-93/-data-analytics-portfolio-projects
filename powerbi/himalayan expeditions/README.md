@@ -20,11 +20,11 @@ Expedition volume peaked in 2009 with 420 expeditions and 2,865 participants. In
 - **Everest dominated expedition activity, while Ama Dablam combined popularity with strong success.**  
 Everest accounted for 2,338 expeditions, representing 20.6% of all expedition activity. Ama Dablam ranked second with 1,576 expeditions and achieved the highest success rate among peaks with at least 30 expeditions, reaching 71.3%.
 
-- **The highest death count did not represent the highest relative risk.**  
-Everest recorded the most deaths, but its Above-Base-Camp Death Rate was 1.31%. Annapurna I and Dhaulagiri I had substantially higher relative rates of 3.85% and 2.95%, showing why absolute deaths should be interpreted together with participant exposure and summit volume.
+- **Absolute death counts and relative risk revealed different patterns.**  
+Everest recorded the highest number of deaths, but Annapurna I and Dhaulagiri I had substantially higher relative death rates. Falls and avalanches were the two leading recorded causes of death above Base Camp, accounting for 331 and 322 deaths respectively. The highest Above-Base-Camp Death Rate by elevation was observed among peaks between 7,500 and 7,999 meters, showing that relative risk did not increase linearly with summit height.
 
 - **Nepal dominated both participation and summit performance.**  
-Nepal accounted for 20,704 participant records, representing 23.4% of the total. It also recorded 14,169 successful participant records and achieved a 69.4% Member Summit Rate, compared with approximately 31% to 38% among the other most represented countries.  
+Nepal accounted for 20,704 participant records, representing 23.4% of the total, followed by the United States with 7,447 records and Japan with 6,604. Nepal also recorded 14,169 successful participant records and achieved a 69.4% Member Summit Rate, compared with approximately 31% to 38% among the other most represented countries. 
 
 > The dataset ends in June 2024. Therefore, 2024 represents a partial year and should not be compared directly with complete calendar years. Participant records represent person-expedition entries rather than unique climbers
 # Dashboard Preview
