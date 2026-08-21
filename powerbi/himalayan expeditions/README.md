@@ -62,8 +62,8 @@ Unique climbers were not estimated because the data does not contain a reliable 
 
 ## Data Model
 The model follows a simple one-to-many structure:    
-``Years[Year] 1 -> * Expeditions[Expedition Year]``
-``Peaks[Peak ID] 1 -> * Expeditions[Peak ID]``
+``Years[Year] 1 -> * Expeditions[Expedition Year]``    
+``Peaks[Peak ID] 1 -> * Expeditions[Peak ID]``    
 ``Expeditions[ExpeditionKey] 1 -> * Members[ExpeditionKey]``    
 
 All relationships are active and use single-direction filtering.    
