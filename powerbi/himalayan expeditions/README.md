@@ -1,13 +1,12 @@
 # Himalayan Expeditions Analytics Dashboard
 A four-page Power BI dashboard exploring the historical development of Himalayan expeditions, peak popularity, expedition success, recorded risk, and the global participation of expedition members.
-> **Project status:** Completed dashboard, final validation and portfolio publication in progress.
 
 ## Project Overview
 The project was created to answer four main questions:
-How has Himalayan expedition activity changed over time?
-Which peaks attracted the most expeditions and achieved the highest success rates?
-Which peaks combined expedition success with elevated recorded risk?
-Where did registered expedition participants come from?
+How has Himalayan expedition activity changed over time?    
+Which peaks attracted the most expeditions and achieved the highest success rates?    
+Which peaks combined expedition success with elevated recorded risk?    
+Where did registered expedition participants come from?    
 The final report contains four pages:
 Expedition Trends
 Peak Popularity & Success
