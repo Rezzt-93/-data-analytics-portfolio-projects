@@ -25,8 +25,8 @@ Everest recorded the most deaths, but its Above-Base-Camp Death Rate was 1.31%. 
 
 - **Nepal dominated both participation and summit performance.**  
 Nepal accounted for 20,704 participant records, representing 23.4% of the total. It also recorded 14,169 successful participant records and achieved a 69.4% Member Summit Rate, compared with approximately 31% to 38% among the other most represented countries.  
-<!-- The dataset ends in June 2024. Therefore, 2024 represents a partial year and should not be compared directly with complete calendar years. Participant records represent person-expedition entries rather than unique climbers. -->
 
+> The dataset ends in June 2024. Therefore, 2024 represents a partial year and should not be compared directly with complete calendar years. Participant records represent person-expedition entries rather than unique climbers
 # Dashboard Preview
 
 ## 1. Expedition Trends
