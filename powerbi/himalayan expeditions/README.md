@@ -169,29 +169,27 @@ Uses the map as an interactive country selector:
 - Most frequent peaks for the selected country    
 - Participation trend for the selected country    
 ## User Experience Features
-Page navigator across all four report pages    
-Slide-out filter panels built with bookmarks and the Selection pane    
-Page-level reset buttons    
-Separate reset option inside each filter panel    
-Default year range of 1950-2024    
-Dynamic minimum sample thresholds for selected peak-level analysis    
-Custom report-page tooltips for peaks and countries    
-Controlled visual interactions to preserve analytical context    
-## Selected Finding
-Everest recorded the highest absolute number of deaths, but Annapurna I and Dhaulagiri I showed substantially higher relative recorded risk. This demonstrates why absolute fatalities should be interpreted together with exposure-based death rates and deaths per 100 successful summits.
-Additional insights will be added after the final review of all report pages.
+- Page navigator across all four report pages    
+- Slide-out filter panels built with bookmarks and the Selection pane    
+- Page-level reset buttons    
+- Separate reset option inside each filter panel    
+- Default year range of 1950-2024    
+- Dynamic minimum sample thresholds for selected peak-level analysis    
+- Custom report-page tooltips for peaks and countries    
+- Controlled visual interactions to preserve analytical context    
 ## Limitations
-The same person may appear in multiple expeditions, so participant records are not unique climbers.
-Detailed hired-personnel records may be less complete than expedition-level aggregates.
-Some historical dates, birth years, summit-bid outcomes, and citizenship values are missing or uncertain.
-Multiple citizenship values were excluded from map positioning to avoid arbitrary assignment or double counting.
-`Deaths per 100 Summits` is a comparison ratio, not an individual probability of death.
-Trends coinciding with external events should not be interpreted as causal without additional evidence.
-The completeness of the latest year should be checked before interpreting end-of-series declines.
+- The same person may appear in multiple expeditions, so participant records are not unique climbers.  
+- Detailed hired-personnel records may be less complete than expedition-level aggregates.  
+- Some historical dates, birth years, summit-bid outcomes, and citizenship values are missing or uncertain.  
+- Multiple citizenship values were excluded from map positioning to avoid arbitrary assignment or double counting.  
+- `Deaths per 100 Summits` is a comparison ratio, not an individual probability of death.  
+- Trends coinciding with external events should not be interpreted as causal without additional evidence.  
+- The completeness of the latest year should be checked before interpreting end-of-series declines.  
 ## Performance
-The report was tested with Power BI Performance Analyzer. Visuals loaded in under approximately 850 ms during testing. DAX query execution was fast, while most elapsed time was associated with visual rendering and other client-side operations.
+The report was tested with Power BI Performance Analyzer. Visuals loaded in under approximately 850 ms during testing.   
+DAX query execution was fast, while most elapsed time was associated with visual rendering and other client-side operations.  
 
 
-Author
+Created by
 Bartlomiej Czop
-Power BI portfolio project focused on data preparation, semantic modelling, analytical measure design, data-quality decisions, and interactive dashboard development.
+
