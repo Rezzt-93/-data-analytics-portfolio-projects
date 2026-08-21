@@ -17,7 +17,7 @@ The Power BI analysis was built using:
 - `members.csv`
 
 
-### Data Version
+## Data Version
 
 The version used in this project contains records through June 2024.
 Therefore, 2024 is treated as a partial year in the report.
