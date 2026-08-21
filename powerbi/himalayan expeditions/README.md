@@ -142,7 +142,7 @@ Deaths per 100 Summits: 3.11
 The default report view is filtered to 1950-2024, while users can manually extend the range to earlier years.
 # Report Pages
 ## Expedition Trends
-- Focuses on the historical development of Himalayan mountaineering:    
+Focuses on the historical development of Himalayan mountaineering:  
 - Expeditions and participants over time    
 - Successful expeditions and expedition success rate    
 - Distinct peaks attempted and successfully climbed    
