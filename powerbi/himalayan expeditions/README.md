@@ -36,9 +36,10 @@ Performance Analyzer for visual performance testing
 
 ## Data Preparation
 The analytical model uses three main source tables:    
-`Peaks`
-`Expeditions`
-`Members`    
+`Peaks`    
+`Expeditions`    
+`Members`        
+
 Key preparation steps included:    
 Correcting CSV parsing    
 Selecting only fields required for the analysis    
@@ -50,47 +51,47 @@ Creating ordered `Season` and `Height Band` categories
 Standardising country names for geographic mapping while preserving original citizenship values    
 
 ## Data Quality Decisions
-Several data-quality issues required explicit decisions:
-Four expedition identifiers were reused across different years, so relationships were not created using `Expedition ID` alone.
-A composite `ExpeditionKey` was created using expedition identifier and year.
-89 member records without a safe expedition assignment were excluded from participant-level analysis.
-4 expedition records with inconsistent participant counts were retained but flagged and excluded from measures that depend on those counts.
-Missing values were preserved as nulls and were not automatically replaced with zero.
-Multiple, uncertain, or missing citizenship values were retained in the source field but excluded from geographic mapping.
-Unique climbers were not estimated because the data does not contain a reliable global person identifier.
+Several data-quality issues required explicit decisions:    
+Four expedition identifiers were reused across different years, so relationships were not created using `Expedition ID` alone.    
+A composite `ExpeditionKey` was created using expedition identifier and year.    
+89 member records without a safe expedition assignment were excluded from participant-level analysis.    
+4 expedition records with inconsistent participant counts were retained but flagged and excluded from measures that depend on those counts.    
+Missing values were preserved as nulls and were not automatically replaced with zero.    
+Multiple, uncertain, or missing citizenship values were retained in the source field but excluded from geographic mapping.    
+Unique climbers were not estimated because the data does not contain a reliable global person identifier.    
 
 ## Data Model
-The model follows a simple one-to-many structure:
-Years[Year] 1 -> * Expeditions[Expedition Year]
-Peaks[Peak ID] 1 -> * Expeditions[Peak ID]
-Expeditions[ExpeditionKey] 1 -> * Members[ExpeditionKey]
+The model follows a simple one-to-many structure:    
+``Years[Year] 1 -> * Expeditions[Expedition Year]``
+``Peaks[Peak ID] 1 -> * Expeditions[Peak ID]``
+``Expeditions[ExpeditionKey] 1 -> * Members[ExpeditionKey]``    
 
-All relationships are active and use single-direction filtering.
+All relationships are active and use single-direction filtering.    
 
 ## Business Definitions
-## Successful Expedition
+## 1. Successful Expedition
 An expedition is classified as successful when:
 At least one recorded route was successful
 The success was not marked as claimed but unrecognised
 Disputed successes remained included
-## Participant Record
+## 2. Participant Record
 One row in `Members` represents one registered person-expedition record. The same person may appear in multiple expeditions, so participant records are not treated as unique climbers.
-## Above-Base-Camp Participant
+## 3. Above-Base-Camp Participant
 A registered participant who:
 Reached base camp
 Was not restricted to base camp only
 Conducted activity above base camp
-## Member Summit Rate
+## 4. Member Summit Rate
 ```text
 Successful Participant Records / Above-Base-Camp Participants
 ```
 This denominator was selected instead of documented summit bids because it provides a broader and more interpretable population of participants exposed to higher-altitude activity.
-## Above-Base-Camp Death Rate
+## 5. Above-Base-Camp Death Rate
 ```text
 Recorded Deaths Above Base Camp / Above-Base-Camp Participants
 ```
 The measure is an exposure-based recorded mortality rate. It should not be interpreted as the exact probability of death for an individual climber.
-## Deaths per 100 Summits
+## 6. Deaths per 100 Summits
 ```text
 Total Deaths / Total Successful Summiters * 100
 ```
