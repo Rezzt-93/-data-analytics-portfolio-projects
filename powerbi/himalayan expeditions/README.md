@@ -190,6 +190,6 @@ The report was tested with Power BI Performance Analyzer. Visuals loaded in unde
 DAX query execution was fast, while most elapsed time was associated with visual rendering and other client-side operations.  
 
 
-```Created by
-Bartlomiej Czop```
+*Created by
+Bartlomiej Czop*
 
