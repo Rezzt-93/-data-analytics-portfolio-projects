@@ -225,7 +225,6 @@ DAX query execution was fast, while most elapsed time was associated with visual
 This project uses the *Himalayan Expeditions* dataset published on Kaggle.
 Full details on source files and data version: [data/README.md](data/README.md)
 
-*Created by
-Bartlomiej Czop*
+*Created by Bartłomiej Czop*  
 [LinkedIn](https://www.linkedin.com/in/bartlomiej-czop/) · [Portfolio](https://rezzt-93.github.io/index.html) · [Email](mailto:bartlomiej.czop1@gmail.com)
 
