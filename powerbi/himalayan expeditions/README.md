@@ -2,6 +2,22 @@
 A four-page interactive Power BI dashboard exploring the historical development of Himalayan expeditions, peak popularity, expedition success, recorded risk, and global participation.
 The dashboard includes bookmark-based navigation, slide-out filter panels, reset controls, dynamic parameters, interactive maps, and custom tooltips.
 
+# Spis treści
+- [Project Overview](#project-overview)
+- [Key Insights](#key-insights)
+- [Dashboard Preview](#dashboard-preview)
+- [Tools and Technologies](#tools-and-technologies)
+- [Data Preparation](#data-preparation)
+- [Data Quality Decisions](#data-quality-decisions)
+- [Data Model](#data-model)
+- [Business Definitions](#business-definitions)
+- [Key Measures](#key-measures)
+- [Report Pages](#report-pages)
+- [User Experience Features](#user-experience-features)
+- [Limitations](#limitations)
+- [Performance](#performance)
+- [Data Source](#data-source)
+
 # Project Overview
 **The project was created to answer four main questions:**  
 - How has Himalayan expedition activity changed over time?    
@@ -205,7 +221,11 @@ Uses the map as an interactive country selector:
 The report was tested with Power BI Performance Analyzer. Visuals loaded in under approximately 850 ms during testing.   
 DAX query execution was fast, while most elapsed time was associated with visual rendering and other client-side operations.  
 
+# Data Source
+This project uses the *Himalayan Expeditions* dataset published on Kaggle.
+Full details on source files and data version: [data/README.md](data/README.md)
 
 *Created by
 Bartlomiej Czop*
+[LinkedIn](https://www.linkedin.com/in/bartlomiej-czop/) · [Portfolio](https://rezzt-93.github.io/index.html) · [Email](mailto:bartlomiej.czop1@gmail.com)
 
