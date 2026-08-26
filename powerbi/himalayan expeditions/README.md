@@ -1,11 +1,11 @@
 # Himalayan Expedition Analytics
-A four-page interactive Power BI dashboard exploring the historical development of Himalayan expeditions, peak popularity, expedition success, recorded risk, and global participation.
-The dashboard includes bookmark-based navigation, slide-out filter panels, reset controls, dynamic parameters, interactive maps, and custom tooltips.
+A four-page interactive Power BI report exploring the historical development of Himalayan expeditions, peak popularity, expedition success, recorded risk, and global participation.
+The report includes bookmark-based navigation, slide-out filter panels, reset controls, dynamic parameters, interactive maps, and custom tooltips.
 
 # Table of Contents
 - [Project Overview](#project-overview)
 - [Key Insights](#key-insights)
-- [Dashboard Preview](#dashboard-preview)
+- [Report Preview](#report-preview)
 - [Tools and Technologies](#tools-and-technologies)
 - [Data Preparation](#data-preparation)
 - [Data Quality Decisions](#data-quality-decisions)
@@ -44,7 +44,7 @@ Everest recorded the highest number of deaths, but Annapurna I and Dhaulagiri I 
 Nepal accounted for 20,704 participant records, representing 23.4% of the total, followed by the United States with 7,447 records and Japan with 6,604. Nepal also recorded 14,169 successful participant records and achieved a 69.4% Member Summit Rate, compared with approximately 31% to 38% among the other most represented countries. 
 
 > The dataset ends in June 2024. Therefore, 2024 represents a partial year and should not be compared directly with complete calendar years. Participant records represent person-expedition entries rather than unique climbers
-# Dashboard Preview
+# Report Preview
 
 ## 1. Expedition Trends
 ![Expedition Trends](images/01-expedition-trends.png)
