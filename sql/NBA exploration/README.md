@@ -115,13 +115,13 @@ The query uses:
 - Season-level aggregation
 
 Selected results include:
-
-**1996-97:** Shaquille O'Neal, **41.8** combined average
-**2007-08:** LeBron James, **45.1**
-**2016-17:** Russell Westbrook, **52.7**
-**2020-21:** Nikola Jokic, **45.5**
-**2022-23:** Luka Doncic, **49.0**
-
+```text
+1996-97: Shaquille O'Neal, 41.8 combined average    
+2007-08: LeBron James, 45.1    
+2016-17: Russell Westbrook, 52.7    
+2020-21: Nikola Jokic, 45.5    
+2022-23: Luka Doncic, 49.0    
+```
 Russell Westbrook recorded the highest season-leading combined average in the dataset, reaching **52.7 combined points, rebounds, and assists per game in 2016-17**.
 
 The complete query is available in [`sql/03_season_leaders.sql`](sql/03_season_leaders.sql), and the full results are stored in [`results/season_leaders.csv`](results/season_leaders.csv).
@@ -135,27 +135,27 @@ The analysis compared player scoring performance by draft position and college b
 Among first-round selections, players chosen with the first overall pick recorded the highest average scoring result at **16.46 points per game**. However, scoring averages did not decline consistently with each subsequent draft position.
 
 Several players selected outside the first round also achieved strong scoring averages:
-
-- **Nikola Jokic**, 41st pick: 20.40 points per game
-- **Gilbert Arenas**, 30th pick: 18.36
-- **Monta Ellis**, 40th pick: 17.66
-- **Christian Wood**, undrafted: 15.36
-- **Fred VanVleet**, undrafted: 14.19
-
+```text
+- Nikola Jokic, 41st pick: 20.40 points per game    
+- Gilbert Arenas, 30th pick: 18.36    
+- Monta Ellis, 40th pick: 17.66    
+- Christian Wood, undrafted: 15.36    
+- Fred VanVleet, undrafted: 14.19    
+```
 These results show that productive scorers were also found in the second round and among undrafted players.
 
 ### College Background
 
-To reduce the influence of small groups, the college comparison included only colleges represented by at least 10 players.
+To reduce the influence of small groups, the college comparison included only colleges represented by at least `10 players.`
 
 The highest average scoring results were recorded by:
-
-- **Oklahoma:** 11.32 points per game across 13 players
-- **Wake Forest:** 11.24 across 17 players
-- **Connecticut:** 10.46 across 31 players
-- **Kentucky:** 10.25 across 77 players
-- **Duke:** 10.00 across 68 players
-
+```text
+- Oklahoma: 11.32 points per game across 13 players    
+- Wake Forest: 11.24 across 17 players    
+- Connecticut: 10.46 across 31 players    
+- Kentucky: 10.25 across 77 players    
+- Duke: 10.00 across 68 players    
+```
 Oklahoma and Wake Forest recorded the highest averages, while Kentucky and Duke combined strong scoring results with much larger player representation.
 
 The complete queries are available in [`sql/04_draft_and_college_analysis.sql`](sql/04_draft_and_college_analysis.sql), and the results are stored in [`results/draft_and_college_results.csv`](results/draft_and_college_results.csv).
