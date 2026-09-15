@@ -56,9 +56,9 @@ The source CSV contains 12,844 records and 22 columns.
 
 ## Tools
 
-**SQL** for data exploration, aggregation, ranking, and trend analysis    
-**PostgreSQL** as the database environment used to execute the queries    
-**CSV** files for source data and query results    
+- **SQL** for data exploration, aggregation, ranking, and trend analysis    
+- **PostgreSQL** as the database environment used to execute the queries    
+- **CSV** files for source data and query results    
 
 ## SQL Skills Demonstrated
 
@@ -98,9 +98,9 @@ The dataset covers:
 - **First season:** 1996-97
 - **Last season:** 2022-23
 - **12,844 season-level player records**
-
+```text
 The number of player records increased from **441 in 1996-97** to a peak of **605 in 2021-22**. The final season included in the dataset, 2022-23, contained **539 player records**.
-
+```
 The full SQL queries are available in [`sql/02_dataset_overview.sql`](sql/02_dataset_overview.sql), while the season-level results are stored in [`results/players_by_season.csv`](results/players_by_season.csv).
 
 ## 2. Season Leaders
@@ -115,15 +115,15 @@ The query uses:
 - Season-level aggregation
 
 Selected results include:
-```text
+
 **1996-97:** Shaquille O'Neal, **41.8** combined average
 **2007-08:** LeBron James, **45.1**
 **2016-17:** Russell Westbrook, **52.7**
 **2020-21:** Nikola Jokic, **45.5**
 **2022-23:** Luka Doncic, **49.0**
-```
+```text
 Russell Westbrook recorded the highest season-leading combined average in the dataset, reaching **52.7 combined points, rebounds, and assists per game in 2016-17**.
-
+```
 The complete query is available in [`sql/03_season_leaders.sql`](sql/03_season_leaders.sql), and the full results are stored in [`results/season_leaders.csv`](results/season_leaders.csv).
 
 ## 3. Draft and College Analysis
