@@ -23,16 +23,16 @@ The project demonstrates the practical use of SQL to answer analytical questions
 
 ## Project Overview
 
-The goal of this project is to demonstrate practical SQL skills by exploring NBA player data and answering structured analytical questions.
+**The goal of this project is to demonstrate practical SQL skills by exploring NBA player data and answering structured analytical questions.**
 
 The analysis focuses on four areas:
 
-- The number of player records and the time range covered by the dataset
-- Season leaders based on combined points, rebounds, and assists per game
-- Player performance in relation to draft position and college background
-- The growth and performance of international players
+- The number of player records and the time range covered by the dataset    
+- Season leaders based on combined points, rebounds, and assists per game    
+- Player performance in relation to draft position and college background    
+- The growth and performance of international players    
 
-The project uses season-level data covering 27 NBA seasons, from 1996-97 through 2022-23.
+The project uses season-level data covering 27 NBA seasons, from 1996-97 through 2022-23.    
 
 ## Dataset
 
@@ -40,13 +40,13 @@ The dataset contains season-level NBA player records covering 27 seasons, from 1
 
 Each record includes information about:
 
-- Player name, age, height, and weight
-- Team and season
-- College and country
-- Draft year, round, and number
-- Games played
-- Points, rebounds, and assists per game
-- Selected advanced performance metrics
+`Player name, age, height, and weight`
+`Team and season`
+`College and country`
+`Draft year, round, and number`
+`Games played`
+`Points, rebounds, and assists per game`
+`Selected advanced performance metrics`
 
 The source CSV contains 12,844 records and 22 columns.
 
