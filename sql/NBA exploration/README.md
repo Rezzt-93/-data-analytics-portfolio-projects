@@ -19,7 +19,6 @@ The project demonstrates the practical use of SQL to answer analytical questions
 - [Repository Structure](#repository-structure)
 - [Limitations](#limitations)
 - [Data Source](#data-source)
-- [Author](#author)
 
 # Project Overview
 
@@ -276,9 +275,7 @@ This project uses the **NBA Players** dataset published on Kaggle. The dataset c
 - **Rows:** 12,844
 - **Columns:** 22
 
-The source CSV is included in the `data/` folder to support reproducibility.
-
-# Author
+The source CSV is included in the `data/` folder.
 
 _Created by Bartłomiej Czop_
 
