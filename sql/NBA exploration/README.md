@@ -208,19 +208,19 @@ The complete queries are available in [`sql/05_international_players.sql`](sql/0
 
 # Key Findings
 
-- **International representation increased substantially.**
+- **International representation increased substantially.**    
   International players accounted for 2.04% of player records in 1996-97 and 23.38% in 2022-23. The increase occurred across most of the analyzed period, indicating a clear long-term shift toward a more international league.
-- **Canada was the largest source of international players.**
+- **Canada was the largest source of international players.**    
   Canada contributed 48 unique players, followed by France with 37 and Australia with 31.
-- **International growth was accompanied by strong individual performance.**
+- **International growth was accompanied by strong individual performance.**    
   Luka Doncic recorded the highest average scoring result among international players at 27.70 points per game, followed by Joel Embiid at 26.54.
-- **The first overall draft pick produced the highest scoring average among first-round positions.**
+- **The first overall draft pick produced the highest scoring average among first-round positions.**    
   Players selected first averaged 16.46 points per game. However, scoring averages did not decline consistently with each subsequent draft position.
-- **Strong scorers were also found outside the first round.**
+- **Strong scorers were also found outside the first round.**    
   Nikola Jokic, selected with the 41st pick, averaged 20.40 points per game. Several second-round and undrafted players also appeared among the leading scorers in these groups.
-- **College scoring averages and player representation showed different patterns.**
+- **College scoring averages and player representation showed different patterns.**    
   Oklahoma and Wake Forest recorded the highest scoring averages among colleges represented by at least 10 players, while Kentucky and Duke combined strong averages with considerably larger groups of players.
-- **Russell Westbrook recorded the highest season-leading combined average.**
+- **Russell Westbrook recorded the highest season-leading combined average.**    
   His combined points, rebounds, and assists reached 52.7 per game in the 2016-17 season.
 
 # Repository Structure
