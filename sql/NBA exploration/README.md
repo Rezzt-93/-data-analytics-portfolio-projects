@@ -235,6 +235,9 @@ nba-sql-data-exploration/
 |-- data/
 |   `-- all_seasons.csv
 |
+|-- images/
+|  `-- international-player-share-by-season.png
+|
 |-- sql/
 |   |-- 01_database_setup.sql
 |   |-- 02_dataset_overview.sql
