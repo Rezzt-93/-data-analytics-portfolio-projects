@@ -174,34 +174,34 @@ International players accounted for:
 ### Growth Across Seasons
 
 International representation increased substantially over time:
-
-- **1996-97:** 9 players, representing 2.04%
-- **2005-06:** 80 players, representing 17.47%
-- **2016-17:** 115 players, representing 23.66%
-- **2022-23:** 126 players, representing 23.38%
-
+```text
+- 1996-97: 9 players, representing 2.04%    
+- 2005-06: 80 players, representing 17.47%    
+- 2016-17: 115 players, representing 23.66%    
+- 2022-23: 126 players, representing 23.38%    
+```
 The share of international players increased across most of the analyzed period, despite occasional season-to-season declines. By 2022-23, international players represented nearly one-quarter of all recorded players, compared with only 2.04% in 1996-97.
 
 ### Leading Countries
 
 The countries with the highest number of international players were:
-
-- **Canada:** 48 players
-- **France:** 37
-- **Australia:** 31
-- **Croatia:** 15
-- **Serbia:** 15
-
+```text
+- Canada: 48 players    
+- France: 37    
+- Australia: 31    
+- Croatia: 15    
+- Serbia: 15    
+```
 ### Leading International Scorers
 
 The highest career scoring averages among international players were recorded by:
-
-- **Luka Doncic, Slovenia:** 27.70 points per game
-- **Joel Embiid, Cameroon:** 26.54
-- **Kyrie Irving, Australia:** 23.77
-- **Giannis Antetokounmpo, Greece:** 23.25
-- **Shai Gilgeous-Alexander, Canada:** 21.88
-
+```text
+- Luka Doncic, Slovenia: 27.70 points per game    
+- Joel Embiid, Cameroon: 26.54    
+- Kyrie Irving, Australia: 23.77    
+- Giannis Antetokounmpo, Greece: 23.25    
+- Shai Gilgeous-Alexander, Canada: 21.88    
+```
 The results indicate that the NBA became substantially more international during the analyzed period. This growth was visible not only in the number of international players but also in the strong individual performance recorded by players from several countries.
 
 The complete queries are available in [`sql/05_international_players.sql`](sql/05_international_players.sql). The results are stored in [`results/international_players_by_season.csv`](results/international_players_by_season.csv) and [`results/international_players_summary.csv`](results/international_players_summary.csv).
