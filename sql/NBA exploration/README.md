@@ -4,7 +4,7 @@ An SQL data exploration project analyzing NBA player records across 27 seasons, 
 
 The project demonstrates the practical use of SQL to answer analytical questions, aggregate season-level data, create player rankings, compare draft and college backgrounds, and examine the growth of international representation in the NBA.
 
-## Table of Contents
+# Table of Contents
 
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
@@ -21,7 +21,7 @@ The project demonstrates the practical use of SQL to answer analytical questions
 - [Data Source](#data-source)
 - [Author](#author)
 
-## Project Overview
+# Project Overview
 
 **The goal of this project is to demonstrate practical SQL skills by exploring NBA player data and answering structured analytical questions.**
 
@@ -34,33 +34,33 @@ The analysis focuses on four areas:
 
 The project uses season-level data covering 27 NBA seasons, from 1996-97 through 2022-23.    
 
-## Dataset
+# Dataset
 
-The dataset contains season-level NBA player records covering 27 seasons, from 1996-97 through 2022-23.
+**The dataset contains season-level NBA player records covering 27 seasons, from 1996-97 through 2022-23.**
 
-Each record includes information about:
+**Each record includes information about:**
 
-`Player name, age, height, and weight`
-`Team and season`
-`College and country`
-`Draft year, round, and number`
-`Games played`
-`Points, rebounds, and assists per game`
-`Selected advanced performance metrics`
-
+`Player name, age, height, and weight`    
+`Team and season`    
+`College and country`    
+`Draft year, round, and number`    
+`Games played`    
+`Points, rebounds, and assists per game`    
+`Selected advanced performance metrics`    
+    
 The source CSV contains 12,844 records and 22 columns.
+    
+> The original CSV index was stored as `player_index` and used as the primary key for individual rows. A separate `player_id` was generated using `DENSE_RANK()` based on `player_name`, `college`, and `draft_year`. This identifier enabled player records to be aggregated across multiple seasons and helped distinguish players with identical names.
 
-The original CSV index was stored as `player_index` and used as the primary key for individual rows. A separate `player_id` was generated using `DENSE_RANK()` based on `player_name`, `college`, and `draft_year`. This identifier enabled player records to be aggregated across multiple seasons and helped distinguish players with identical names.
+# Tools and SQL Skills
 
-## Tools and SQL Skills
-
-### Tools
+## Tools
 
 - **SQL** for data exploration, aggregation, ranking, and trend analysis
 - **PostgreSQL** as the database environment used to execute the queries
 - **CSV** files for source data and query results
 
-### SQL Skills Demonstrated
+## SQL Skills Demonstrated
 
 - Data filtering with `WHERE`
 - Aggregation with `COUNT()`, `AVG()`, `MIN()`, and `MAX()`
@@ -72,7 +72,7 @@ The original CSV index was stored as `player_index` and used as the primary key 
 - Percentage and ranking calculations
 - Creation of a player-level identifier using `DENSE_RANK()`
 
-## Database Setup
+# Database Setup
 
 The source CSV was imported into the `nba_players` table. The original CSV index was stored as `player_index` and used as the primary key for individual records.
 
@@ -86,9 +86,9 @@ This identifier enabled records belonging to the same player to be aggregated ac
 
 The complete table creation and identifier logic are available in [`sql/01_database_setup.sql`](sql/01_database_setup.sql).
 
-## Analysis
+# Analysis
 
-### 1. Dataset Overview
+## 1. Dataset Overview
 
 The first queries established the scope of the analysis and compared the number of player records across seasons.
 
@@ -103,7 +103,7 @@ The number of player records increased from **441 in 1996-97** to a peak of **60
 
 The full SQL queries are available in [`sql/02_dataset_overview.sql`](sql/02_dataset_overview.sql), while the season-level results are stored in [`results/players_by_season.csv`](results/players_by_season.csv).
 
-### 2. Season Leaders
+## 2. Season Leaders
 
 A ranking query was used to identify the player with the highest combined points, rebounds, and assists per game in each season.
 
@@ -126,11 +126,11 @@ Russell Westbrook recorded the highest season-leading combined average in the da
 
 The complete query is available in [`sql/03_season_leaders.sql`](sql/03_season_leaders.sql), and the full results are stored in [`results/season_leaders.csv`](results/season_leaders.csv).
 
-### 3. Draft and College Analysis
+## 3. Draft and College Analysis
 
 The analysis compared player scoring performance by draft position and college background.
 
-#### Draft Position
+### Draft Position
 
 Among first-round selections, players chosen with the first overall pick recorded the highest average scoring result at **16.46 points per game**. However, scoring averages did not decline consistently with each subsequent draft position.
 
@@ -144,7 +144,7 @@ Several players selected outside the first round also achieved strong scoring av
 
 These results show that productive scorers were also found in the second round and among undrafted players.
 
-#### College Background
+### College Background
 
 To reduce the influence of small groups, the college comparison included only colleges represented by at least 10 players.
 
@@ -160,18 +160,18 @@ Oklahoma and Wake Forest recorded the highest averages, while Kentucky and Duke 
 
 The complete queries are available in [`sql/04_draft_and_college_analysis.sql`](sql/04_draft_and_college_analysis.sql), and the results are stored in [`results/draft_and_college_results.csv`](results/draft_and_college_results.csv).
 
-### 4. International Players
+## 4. International Players
 
 The international player analysis examined the overall share, long-term development, leading countries, and scoring performance of players recorded outside the USA.
 
-#### International Representation
+### International Representation
 
 International players accounted for:
 
 - **433 unique players**
 - **16.18% of all unique players** in the complete analyzed period
 
-#### Growth Across Seasons
+### Growth Across Seasons
 
 International representation increased substantially over time:
 
@@ -182,7 +182,7 @@ International representation increased substantially over time:
 
 The share of international players increased across most of the analyzed period, despite occasional season-to-season declines. By 2022-23, international players represented nearly one-quarter of all recorded players, compared with only 2.04% in 1996-97.
 
-#### Leading Countries
+### Leading Countries
 
 The countries with the highest number of international players were:
 
@@ -192,7 +192,7 @@ The countries with the highest number of international players were:
 - **Croatia:** 15
 - **Serbia:** 15
 
-#### Leading International Scorers
+### Leading International Scorers
 
 The highest career scoring averages among international players were recorded by:
 
@@ -206,7 +206,7 @@ The results indicate that the NBA became substantially more international during
 
 The complete queries are available in [`sql/05_international_players.sql`](sql/05_international_players.sql). The results are stored in [`results/international_players_by_season.csv`](results/international_players_by_season.csv) and [`results/international_players_summary.csv`](results/international_players_summary.csv).
 
-## Key Findings
+# Key Findings
 
 - **International representation increased substantially.** International players accounted for 2.04% of player records in 1996-97 and 23.38% in 2022-23. The increase occurred across most of the analyzed period, indicating a clear long-term shift toward a more international league.
 - **Canada was the largest source of international players.** Canada contributed 48 unique players, followed by France with 37 and Australia with 31.
@@ -216,7 +216,7 @@ The complete queries are available in [`sql/05_international_players.sql`](sql/0
 - **College scoring averages and player representation showed different patterns.** Oklahoma and Wake Forest recorded the highest scoring averages among colleges represented by at least 10 players, while Kentucky and Duke combined strong averages with considerably larger groups of players.
 - **Russell Westbrook recorded the highest season-leading combined average.** His combined points, rebounds, and assists reached 52.7 per game in the 2016-17 season.
 
-## Repository Structure
+# Repository Structure
 
 ```text
 nba-sql-data-exploration/
@@ -245,7 +245,7 @@ nba-sql-data-exploration/
 - `sql/` contains the database setup and analytical SQL queries.
 - `results/` contains the query results used to support the findings presented in this README.
 
-## Limitations
+# Limitations
 
 - The dataset covers the 1996-97 through 2022-23 seasons and does not represent the complete history of the NBA.
 - Player statistics are recorded as season-level averages rather than game-level results.
@@ -255,7 +255,7 @@ nba-sql-data-exploration/
 - Draft position and scoring results may be related, but this descriptive analysis does not establish a causal relationship.
 - Players were identified using a generated `player_id` based on player name, college, and draft year.
 
-## Data Source
+# Data Source
 
 This project uses the **NBA Players** dataset published on Kaggle. The dataset contains biographic information and season-level player statistics covering the 1996-97 through 2022-23 seasons.
 
@@ -266,7 +266,7 @@ This project uses the **NBA Players** dataset published on Kaggle. The dataset c
 
 The source CSV is included in the `data/` folder to support reproducibility.
 
-## Author
+# Author
 
 _Created by Bartłomiej Czop_
 
