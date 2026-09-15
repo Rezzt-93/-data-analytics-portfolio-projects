@@ -1,0 +1,21 @@
+analysis_type,rank,country,player_name,total_players,average_points
+country_representation,1,Canada,,48,
+country_representation,2,France,,37,
+country_representation,3,Australia,,31,
+country_representation,4,Croatia,,15,
+country_representation,5,Serbia,,15,
+country_representation,6,Turkey,,14,
+country_representation,7,Argentina,,14,
+country_representation,8,Spain,,14,
+country_representation,9,Germany,,13,
+country_representation,10,Brazil,,13,
+international_scoring,1,Slovenia,Luka Doncic,,27.70
+international_scoring,2,Cameroon,Joel Embiid,,26.54
+international_scoring,3,Australia,Kyrie Irving,,23.77
+international_scoring,4,Greece,Giannis Antetokounmpo,,23.25
+international_scoring,5,Canada,Shai Gilgeous-Alexander,,21.88
+international_scoring,6,Serbia,Nikola Jokic,,20.40
+international_scoring,7,Germany,Dirk Nowitzki,,20.11
+international_scoring,8,Latvia,Kristaps Porzingis,,19.86
+international_scoring,9,Canada,Andrew Wiggins,,19.08
+international_scoring,10,US Virgin Islands,Tim Duncan,,18.89

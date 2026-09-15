@@ -1,0 +1,71 @@
+analysis_type,rank,player_name,college,draft_round,draft_number,total_players,average_points
+first_round_draft_position,1,,,,1,,16.46
+first_round_draft_position,2,,,,3,,15.02
+first_round_draft_position,3,,,,5,,13.01
+first_round_draft_position,4,,,,4,,12.66
+first_round_draft_position,5,,,,2,,12.61
+first_round_draft_position,6,,,,7,,11.63
+first_round_draft_position,7,,,,13,,11.34
+first_round_draft_position,8,,,,10,,11.04
+first_round_draft_position,9,,,,9,,10.78
+first_round_draft_position,10,,,,6,,10.21
+first_round_draft_position,11,,,,15,,9.40
+first_round_draft_position,12,,,,24,,9.38
+first_round_draft_position,13,,,,8,,9.36
+first_round_draft_position,14,,,,11,,9.33
+first_round_draft_position,15,,,,30,,9.33
+first_round_draft_position,16,,,,17,,9.04
+first_round_draft_position,17,,,,14,,9.00
+first_round_draft_position,18,,,,19,,8.73
+first_round_draft_position,19,,,,16,,8.63
+first_round_draft_position,20,,,,21,,8.17
+first_round_draft_position,21,,,,18,,7.97
+first_round_draft_position,22,,,,12,,7.65
+first_round_draft_position,23,,,,27,,7.63
+first_round_draft_position,24,,,,26,,7.57
+first_round_draft_position,25,,,,25,,7.55
+first_round_draft_position,26,,,,23,,7.41
+first_round_draft_position,27,,,,20,,7.30
+first_round_draft_position,28,,,,28,,7.29
+first_round_draft_position,29,,,,22,,6.89
+first_round_draft_position,30,,,,29,,6.24
+second_round_or_undrafted,1,Nikola Jokic,,2,41,,20.40
+second_round_or_undrafted,2,Gilbert Arenas,,2,30,,18.36
+second_round_or_undrafted,3,Monta Ellis,,2,40,,17.66
+second_round_or_undrafted,4,Khris Middleton,,2,39,,16.31
+second_round_or_undrafted,5,Carlos Boozer,,2,34,,16.27
+second_round_or_undrafted,6,Michael Redd,,2,43,,16.16
+second_round_or_undrafted,7,RaiQuan Gray,,2,59,,16.00
+second_round_or_undrafted,8,Elijah Bryant,,Undrafted,Undrafted,,16.00
+second_round_or_undrafted,9,Jordan Clarkson,,2,46,,15.91
+second_round_or_undrafted,10,Bojan Bogdanovic,,2,31,,15.90
+second_round_or_undrafted,11,Malcolm Brogdon,,2,36,,15.79
+second_round_or_undrafted,12,Cuttino Mobley,,2,41,,15.68
+second_round_or_undrafted,13,Christian Wood,,Undrafted,Undrafted,,15.36
+second_round_or_undrafted,14,Isaiah Thomas,,2,60,,14.98
+second_round_or_undrafted,15,Gary Trent Jr.,,2,37,,14.97
+second_round_or_undrafted,16,Fred VanVleet,,Undrafted,Undrafted,,14.19
+second_round_or_undrafted,17,Dillon Brooks,,2,45,,14.10
+second_round_or_undrafted,18,Jalen Brunson,,2,33,,14.08
+second_round_or_undrafted,19,Dino Radja,,2,40,,14.00
+second_round_or_undrafted,20,Nick Van Exel,,2,37,,13.95
+college_scoring,1,,Oklahoma,,,13,11.32
+college_scoring,2,,Wake Forest,,,17,11.24
+college_scoring,3,,Connecticut,,,31,10.46
+college_scoring,4,,Kentucky,,,77,10.25
+college_scoring,5,,Duke,,,68,10.00
+college_scoring,6,,Texas,,,27,9.98
+college_scoring,7,,Ohio State,,,20,9.93
+college_scoring,8,,Arizona State,,,16,9.85
+college_scoring,9,,Southern California,,,19,9.83
+college_scoring,10,,Michigan,,,39,9.79
+college_scoring,11,,Utah,,,10,9.69
+college_scoring,12,,Texas-Austin,,,14,9.68
+college_scoring,13,,Georgetown,,,25,9.63
+college_scoring,14,,Marquette,,,19,9.43
+college_scoring,15,,Colorado,,,13,9.31
+college_scoring,16,,Georgia Tech,,,34,9.18
+college_scoring,17,,UCLA,,,53,9.06
+college_scoring,18,,Alabama,,,24,9.06
+college_scoring,19,,North Carolina,,,50,9.04
+college_scoring,20,,Tennessee,,,20,8.99
