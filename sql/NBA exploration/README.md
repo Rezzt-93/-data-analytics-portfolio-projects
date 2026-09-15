@@ -173,6 +173,8 @@ International players accounted for:
 
 ### Growth Across Seasons
 
+![Player_Share](images/international-player-share-by-season.png)    
+
 International representation increased substantially over time:
 ```text
 - 1996-97: 9 players, representing 2.04%    
