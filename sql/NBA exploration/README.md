@@ -56,9 +56,9 @@ The source CSV contains 12,844 records and 22 columns.
 
 ## Tools
 
-- **SQL** for data exploration, aggregation, ranking, and trend analysis
-- **PostgreSQL** as the database environment used to execute the queries
-- **CSV** files for source data and query results
+**SQL** for data exploration, aggregation, ranking, and trend analysis    
+**PostgreSQL** as the database environment used to execute the queries    
+**CSV** files for source data and query results    
 
 ## SQL Skills Demonstrated
 
@@ -109,19 +109,19 @@ A ranking query was used to identify the player with the highest combined points
 
 The query uses:
 
-- A Common Table Expression
+- CTE (Common Table Expressions)
 - `RANK()`
 - `PARTITION BY`
 - Season-level aggregation
 
 Selected results include:
-
-- **1996-97:** Shaquille O'Neal, 41.8 combined average
-- **2007-08:** LeBron James, 45.1
-- **2016-17:** Russell Westbrook, 52.7
-- **2020-21:** Nikola Jokic, 45.5
-- **2022-23:** Luka Doncic, 49.0
-
+```text
+**1996-97:** Shaquille O'Neal, **41.8** combined average
+**2007-08:** LeBron James, **45.1**
+**2016-17:** Russell Westbrook, **52.7**
+**2020-21:** Nikola Jokic, **45.5**
+**2022-23:** Luka Doncic, **49.0**
+```
 Russell Westbrook recorded the highest season-leading combined average in the dataset, reaching **52.7 combined points, rebounds, and assists per game in 2016-17**.
 
 The complete query is available in [`sql/03_season_leaders.sql`](sql/03_season_leaders.sql), and the full results are stored in [`results/season_leaders.csv`](results/season_leaders.csv).
