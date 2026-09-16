@@ -31,14 +31,17 @@ CREATE TABLE nba_players (
 ALTER TABLE nba_players
 ADD COLUMN player_id INT;
 
-UPDATE nba_players
-SET player_id = generated.player_id
-FROM (
-    SELECT
-        player_index,
-        DENSE_RANK() OVER (
-            ORDER BY player_name, college, draft_year
-        ) AS player_id
-    FROM nba_players
-) AS generated
-WHERE nba_players.player_index = generated.player_index;
+CREATE TEMPORARY TABLE generated_player_ids AS
+SELECT
+    player_index,
+    DENSE_RANK() OVER (
+        ORDER BY player_name, college, draft_year
+    ) AS player_id
+FROM nba_players;
+
+UPDATE nba_players AS players
+JOIN generated_player_ids AS generated
+    ON players.player_index = generated.player_index
+SET players.player_id = generated.player_id;
+
+DROP TEMPORARY TABLE generated_player_ids;
