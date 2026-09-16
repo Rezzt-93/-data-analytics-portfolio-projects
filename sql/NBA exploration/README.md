@@ -125,7 +125,7 @@ Russell Westbrook recorded the highest season-leading combined average in the da
 
 The complete query is available in [`sql/03_season_leaders.sql`](sql/03_season_leaders.sql), and the full results are stored in [`results/season_leaders.csv`](results/season_leaders.csv).
 
-## 3. Draft and College Analysis
+## 3. Draft Position Analysis
 
 The analysis compared average scoring performance across first-round draft positions.
  
