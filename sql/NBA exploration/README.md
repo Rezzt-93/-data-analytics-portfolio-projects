@@ -2,7 +2,7 @@
 
 An SQL data exploration project analyzing NBA player records across 27 seasons, from 1996-97 to 2022-23.
 
-The project demonstrates the practical use of SQL to answer analytical questions, aggregate season-level data, create player rankings, compare draft and college backgrounds, and examine the growth of international representation in the NBA.
+The project demonstrates the practical use of SQL to answer analytical questions, aggregate season-level data, create player rankings, compare first-round draft positions, and examine the growth of international representation in the NBA.
 
 # Table of Contents
 
@@ -29,7 +29,7 @@ The analysis focuses on four areas:
 - The number of player records and the time range covered by the dataset    
 - Season leaders based on combined points, rebounds, and assists per game    
 - Scoring patterns across first-round draft positions   
-- The growth and performance of international players    
+- The long-term growth of international representation   
 
 The project uses season-level data covering 27 NBA seasons, from 1996-97 through 2022-23.    
 
@@ -129,7 +129,7 @@ The complete query is available in [`sql/03_season_leaders.sql`](sql/03_season_l
 
 The analysis compared average scoring performance across first-round draft positions.
  
-Players selected with the first overall pick recorded the highest average scoring result at **16.46 points per game**. However, the results did not decline consistently with each subsequent draft position.
+Player-season records associated with the first overall draft pick produced the highest average scoring result at **16.46 points per game**. However, the results did not decline consistently with each subsequent draft position.
 
 This suggests that earlier draft positions were generally associated with stronger scoring results, although the relationship was not strictly linear.
 
@@ -137,7 +137,7 @@ The complete queries are available in [`sql/04_draft_position_analysis.sql`](sql
 
 ## 4. International Players
 
-The international player analysis examined the overall share, long-term development, leading countries, and scoring performance of players recorded outside the USA.
+The international player analysis examined how the number and percentage of players recorded outside the USA changed across the available seasons.
 
 ### Growth Across Seasons
 
@@ -167,7 +167,7 @@ The complete queries are available in [`sql/05_international_players.sql`](sql/0
   Their share reached 23.38% in 2022-23, compared with only 2.04% in the first analyzed season.
  
 - **The first overall draft position produced the highest scoring average among first-round positions.**    
-  Players selected first averaged 16.46 points per game. However, scoring averages did not decline consistently with each subsequent draft position.
+   Player-season records associated with the first pick averaged 16.46 points per game. However, scoring averages did not decline consistently with each subsequent draft position.
  
 - **Draft position and scoring performance did not follow a strictly linear relationship.**    
   Several later first-round positions recorded higher averages than positions selected immediately before them.
