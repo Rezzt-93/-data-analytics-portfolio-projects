@@ -13,7 +13,7 @@ The project demonstrates the practical use of SQL to answer analytical questions
 - [Analysis](#analysis)
   - [Dataset Overview](#1-dataset-overview)
   - [Season Leaders](#2-season-leaders)
-  - [Draft and College Analysis](#3-draft-and-college-analysis)
+  - [Draft Position Analysis](#3-draft-position-analysis)
   - [International Players](#4-international-players)
 - [Key Findings](#key-findings)
 - [Repository Structure](#repository-structure)
@@ -28,7 +28,7 @@ The analysis focuses on four areas:
 
 - The number of player records and the time range covered by the dataset    
 - Season leaders based on combined points, rebounds, and assists per game    
-- Player performance in relation to draft position and college background    
+- Scoring patterns across first-round draft positions   
 - The growth and performance of international players    
 
 The project uses season-level data covering 27 NBA seasons, from 1996-97 through 2022-23.    
@@ -49,7 +49,7 @@ The project uses season-level data covering 27 NBA seasons, from 1996-97 through
     
 The source CSV contains 12,844 records and 22 columns.
     
-> The original CSV index was stored as `player_index` and used as the primary key for individual rows. A separate `player_id` was generated using `DENSE_RANK()` based on `player_name`, `college`, and `draft_year`. This identifier enabled player records to be aggregated across multiple seasons and helped distinguish players with identical names.
+> The original CSV index was stored as `player_index` and used as the primary key for individual rows. A separate `player_id` was generated using `DENSE_RANK()` based on `player_name`, `college`, and `draft_year`. The identifier was created to support player-level aggregation across multiple seasons and to distinguish players with identical names.
 
 # Tools and SQL Skills
 
@@ -81,7 +81,7 @@ A separate `player_id` was generated using `DENSE_RANK()` based on:
 - `college`
 - `draft_year`
 
-This identifier enabled records belonging to the same player to be aggregated across multiple seasons while helping distinguish players with identical names.
+The identifier was used to support player-level aggregation across seasons and to distinguish records with identical player names.
 
 The complete table creation and identifier logic are available in [`sql/01_database_setup.sql`](sql/01_database_setup.sql).
 
@@ -127,35 +127,11 @@ The complete query is available in [`sql/03_season_leaders.sql`](sql/03_season_l
 
 ## 3. Draft and College Analysis
 
-The analysis compared player scoring performance by draft position and college background.
+The analysis compared average scoring performance across first-round draft positions.
+ 
+Players selected with the first overall pick recorded the highest average scoring result at **16.46 points per game**. However, the results did not decline consistently with each subsequent draft position.
 
-### Draft Position
-
-Among first-round selections, players chosen with the first overall pick recorded the highest average scoring result at **16.46 points per game**. However, scoring averages did not decline consistently with each subsequent draft position.
-
-Several players selected outside the first round also achieved strong scoring averages:
-```text
-- Nikola Jokic, 41st pick: 20.40 points per game    
-- Gilbert Arenas, 30th pick: 18.36    
-- Monta Ellis, 40th pick: 17.66    
-- Christian Wood, undrafted: 15.36    
-- Fred VanVleet, undrafted: 14.19    
-```
-These results show that productive scorers were also found in the second round and among undrafted players.
-
-### College Background
-
-To reduce the influence of small groups, the college comparison included only colleges represented by at least `10 players.`
-
-The highest average scoring results were recorded by:
-```text
-- Oklahoma: 11.32 points per game across 13 players    
-- Wake Forest: 11.24 across 17 players    
-- Connecticut: 10.46 across 31 players    
-- Kentucky: 10.25 across 77 players    
-- Duke: 10.00 across 68 players    
-```
-Oklahoma and Wake Forest recorded the highest averages, while Kentucky and Duke combined strong scoring results with much larger player representation.
+This suggests that earlier draft positions were generally associated with stronger scoring results, although the relationship was not strictly linear.
 
 The complete queries are available in [`sql/04_draft_and_college_analysis.sql`](sql/04_draft_and_college_analysis.sql), and the results are stored in [`results/draft_and_college_results.csv`](results/draft_and_college_results.csv).
 
@@ -163,16 +139,11 @@ The complete queries are available in [`sql/04_draft_and_college_analysis.sql`](
 
 The international player analysis examined the overall share, long-term development, leading countries, and scoring performance of players recorded outside the USA.
 
-### International Representation
-
-International players accounted for:
-
-- **433 unique players**
-- **16.18% of all unique players** in the complete analyzed period
-
 ### Growth Across Seasons
 
 ![Player_Share](images/international-player-share-by-season.png)    
+
+The analysis examined how the share of players recorded outside the USA changed across the available seasons.
 
 International representation increased substantially over time:
 ```text
@@ -181,48 +152,28 @@ International representation increased substantially over time:
 - 2016-17: 115 players, representing 23.66%    
 - 2022-23: 126 players, representing 23.38%    
 ```
-The share of international players increased across most of the analyzed period, despite occasional season-to-season declines. By 2022-23, international players represented nearly one-quarter of all recorded players, compared with only 2.04% in 1996-97.
+The percentage increased across most of the analyzed period, despite occasional season-to-season declines. By 2022-23, players recorded outside the USA represented nearly one-quarter of all player records, compared with only 2.04% in 1996-97.
 
-### Leading Countries
+> Note: Player countries follow the classifications provided in the source dataset.
 
-The countries with the highest number of international players were:
-```text
-- Canada: 48 players    
-- France: 37    
-- Australia: 31    
-- Croatia: 15    
-- Serbia: 15    
-```
-### Leading International Scorers
-
-The highest career scoring averages among international players were recorded by:
-```text
-- Luka Doncic, Slovenia: 27.70 points per game    
-- Joel Embiid, Cameroon: 26.54    
-- Kyrie Irving, Australia: 23.77    
-- Giannis Antetokounmpo, Greece: 23.25    
-- Shai Gilgeous-Alexander, Canada: 21.88    
-```
-The results indicate that the NBA became substantially more international during the analyzed period. This growth was visible not only in the number of international players but also in the strong individual performance recorded by players from several countries.
-
-The complete queries are available in [`sql/05_international_players.sql`](sql/05_international_players.sql). The results are stored in [`results/international_players_by_season.csv`](results/international_players_by_season.csv) and [`results/international_players_summary.csv`](results/international_players_summary.csv).
+The complete queries are available in [`sql/05_international_players.sql`](sql/05_international_players.sql). The results are stored in [`results/international_players_by_season.csv`](results/international_players_by_season.csv).
 
 # Key Findings
 
 - **International representation increased substantially.**    
-  International players accounted for **2.04%** of player records in **1996-97** and **23.38%** in **2022-23**. The increase occurred across most of the analyzed period, indicating a clear long-term shift toward a more international league.
-- **Canada was the largest source of international players.**    
-  **Canada** contributed **48** unique players, followed by **France** with **37** and **Australia** with **31.**
-- **International growth was accompanied by strong individual performance.**    
-  **Luka Doncic** recorded the highest average scoring result among international players at **27.70** points per game, followed by **Joel Embiid** at **26.54.**
-- **The first overall draft pick produced the highest scoring average among first-round positions.**    
-  Players selected first averaged **16.46** points per game. However, scoring averages did not decline consistently with each subsequent draft position.
-- **Strong scorers were also found outside the first round.**    
-  Nikola Jokic, selected with the **41st pick**, averaged **20.40** points per game. Several second-round and undrafted players also appeared among the leading scorers in these groups.
-- **College scoring averages and player representation showed different patterns.**    
-  **Oklahoma** and **Wake Forest** recorded the highest scoring averages among colleges represented by at least 10 players, while **Kentucky** and **Duke** combined strong averages with considerably larger groups of players.
+  Players recorded outside the USA represented 2.04% of player records in 1996-97 and 23.38% in 2022-23. The increase occurred across most of the analyzed period, indicating a clear long-term shift toward a more international league.
+ 
+- **International players represented nearly one-quarter of the league by the end of the analyzed period.**    
+  Their share reached 23.38% in 2022-23, compared with only 2.04% in the first analyzed season.
+ 
+- **The first overall draft position produced the highest scoring average among first-round positions.**    
+  Players selected first averaged 16.46 points per game. However, scoring averages did not decline consistently with each subsequent draft position.
+ 
+- **Draft position and scoring performance did not follow a strictly linear relationship.**    
+  Several later first-round positions recorded higher averages than positions selected immediately before them.
+ 
 - **Russell Westbrook recorded the highest season-leading combined average.**    
-  His combined points, rebounds, and assists reached **52.7** per game in the 2016-17 season.
+  Combined points, rebounds, and assists reached 52.7 per game in the 2016-17 season.
 
 # Repository Structure
 
@@ -241,15 +192,14 @@ nba-sql-data-exploration/
 |   |-- 01_database_setup.sql
 |   |-- 02_dataset_overview.sql
 |   |-- 03_season_leaders.sql
-|   |-- 04_draft_and_college_analysis.sql
+|   |-- 04_draft_position_analysis.sql
 |   `-- 05_international_players.sql
 |
 `-- results/
     |-- players_by_season.csv
     |-- season_leaders.csv
-    |-- draft_and_college_results.csv
-    |-- international_players_by_season.csv
-    `-- international_players_summary.csv
+    |-- draft_position_results.csv
+    `-- international_players_by_season.csv
 ```
 
 - `data/` contains the source dataset used in the analysis.
@@ -260,11 +210,11 @@ nba-sql-data-exploration/
 
 - The dataset covers the 1996-97 through 2022-23 seasons and does not represent the complete history of the NBA.
 - Player statistics are recorded as season-level averages rather than game-level results.
-- Career scoring averages were calculated by averaging the available season-level values and were not weighted by games played.
-- The `country` column reflects the country assigned to each player in the source dataset.
-- College comparisons describe patterns in the available data and should not be interpreted as evidence that a college directly influenced later NBA performance.
-- Draft position and scoring results may be related, but this descriptive analysis does not establish a causal relationship.
-- Players were identified using a generated `player_id` based on player name, college, and draft year.
+- The `country` column follows the classifications provided in the source dataset.
+- Draft position and scoring performance may be related, but this descriptive analysis does not establish a causal relationship.
+- A generated `player_id` based on player name, college, and draft year was used during the original analysis.
+- College names were not standardized in the source data. College-level results were therefore excluded from the main findings.
+- Career-level scoring rankings dependent on the generated identifier were excluded from the main findings.
 
 # Data Source
 
