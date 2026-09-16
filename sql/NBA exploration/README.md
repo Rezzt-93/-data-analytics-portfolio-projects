@@ -56,7 +56,7 @@ The source CSV contains 12,844 records and 22 columns.
 ## Tools
 
 - **SQL** for data exploration, aggregation, ranking, and trend analysis    
-- **PostgreSQL** as the database environment used to execute the queries    
+- **MySQL Workbench** as the database environment used to execute the queries    
 - **CSV** files for source data and query results    
 
 ## SQL Skills Demonstrated
