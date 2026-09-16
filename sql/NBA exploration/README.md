@@ -133,7 +133,7 @@ Players selected with the first overall pick recorded the highest average scorin
 
 This suggests that earlier draft positions were generally associated with stronger scoring results, although the relationship was not strictly linear.
 
-The complete queries are available in [`sql/04_draft_and_college_analysis.sql`](sql/04_draft_and_college_analysis.sql), and the results are stored in [`results/draft_and_college_results.csv`](results/draft_and_college_results.csv).
+The complete queries are available in [`sql/04_draft_position_analysis.sql`](sql/04_draft_position_analysis.sql), and the results are stored in [`results/draft_position_results.csv`](results/draft_position_results.csv).
 
 ## 4. International Players
 
