@@ -22,18 +22,16 @@ The report combines an executive overview with a focused profitability analysis,
 - [Data Source](#data-source)
 
 ## Project Overview
-
-The project was created to answer four main business questions:
-
+**The project was created to answer four main business questions:**    
 - How did sales, profit, margin, and order volume change over time?
 - Which markets and product categories generated the strongest results?
 - Which products, countries, and subcategories reduced overall profitability?
 - How did profitability differ across discount levels?
 
-The final report contains two pages:
+**The final report contains two pages:**
 
-1. **Executive Sales Overview**
-2. **Profitability Drivers**
+`Executive Sales Overview`
+`Profitability Drivers`
 
 The first page provides a concise management-level summary of business performance. The second page supports a more detailed analysis of loss-making sales lines, discounts, countries, subcategories, and products.
 
