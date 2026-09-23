@@ -82,10 +82,10 @@ The page presents:
 
 # Tools and Technologies
 
-- **Power BI Desktop** for data modelling, DAX, report design, navigation, interactions, and performance testing
-- **Power Query** for data import, type conversion, validation, transformation, and key creation
-- **DAX** for sales, profit, margin, order, year-over-year, and loss-making sales line measures
-- **Performance Analyzer** for testing visual loading performance
+- **Power BI Desktop** for data modelling, DAX, report design, navigation, interactions
+- **Power Query** for importing, cleaning, transforming, and validating source data
+- **DAX** for sales, profit, margin, order, year-over-year, loss-making sales line measures
+- **Performance Analyzer** for visual performance testing  
 
 # Data Preparation
 
@@ -93,26 +93,21 @@ The source consists of one CSV file containing 51,290 sales lines and 21 source 
 
 The preparation process included:
 
-- Importing the source CSV into a staging query
-- Applying regional settings during date and numeric type conversion
-- Converting the source `sales` field from text to a whole number
-- Converting discount, profit, and shipping cost fields to decimal numbers
-- Preserving negative profit values as valid business outcomes
-- Creating a continuous date dimension covering every day from January 1, 2011, to December 31, 2014
-- Creating discount bands for profitability analysis
-- Creating separate order, product, and sales tables
-- Creating numeric surrogate keys for orders and products
-- Disabling load for the staging query
-- Hiding technical keys and sort columns from Report view
+- Importing the source CSV file to staging query
+- Assigning appropriate data types and standardising source field names
+- Creating a continuous date dimension covering the full reporting period
+- Grouping discount values into ordered analytical bands
+- Restructuring the source file into separate `DimOrder`, `DimProduct`, and `FactSales` tables
+- Resolving non-unique source identifiers by identifying orders through `Order ID + Order Date + Customer Name` and products through `Product ID + Product Name`
+- Assigning numeric `OrderKey` and `ProductKey` surrogate keys and using them to build one-to-many model relationships
+- Disabling load for the staging query and hiding technical fields from Report view
 
-The final analytical model contains:
+The final analytical model contains four tables:
 
 - `DimDate`
 - `DimOrder`
 - `DimProduct`
 - `FactSales`
-- `_Measures`
-- `Minimum Sales Lines`
 
 # Data Quality Decisions
 
