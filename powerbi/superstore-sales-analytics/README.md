@@ -352,7 +352,6 @@ The reset buttons restore:
 - Relationships between discount levels and profitability are observational and should not be interpreted as proof of causation.
 - Previous-year measures shift the entire selected date context back by one year. Their clearest year-over-year interpretation is obtained when a single year is selected.
 - The report uses customer names as source attributes and does not attempt to establish whether identical names always represent the same real-world customer.
-- Results describe the historical records included in the dataset and do not represent forecasts.
 
 # Performance
 
@@ -379,6 +378,6 @@ The Power BI report, analytical model, Power Query transformations, DAX measures
 
 ---
 
-_Created by Bartłomiej Czop_
-
+*Created by Bartłomiej Czop*     
+  
 [LinkedIn](https://www.linkedin.com/in/bartlomiej-czop/) · [Portfolio](https://rezzt-93.github.io/index.html) · [Email](mailto:bartlomiej.czop1@gmail.com)
