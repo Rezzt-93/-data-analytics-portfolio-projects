@@ -370,7 +370,7 @@ This project uses the **SuperStore Sales Analytics** dataset published on Kaggle
 
 - **Dataset:** [SuperStore Sales Analytics](https://www.kaggle.com/datasets/thuandao/superstore-sales-analytics)
 - **Source-file documentation:** [data/README.md](data/README.md)
-- **Dataset licence:** [data/LICENSE](data/LICENSE)
+- **Dataset licence:** [data/LICENSE](data/LICENSE.txt)
 
 The source dataset is distributed under the Apache License 2.0.
 
