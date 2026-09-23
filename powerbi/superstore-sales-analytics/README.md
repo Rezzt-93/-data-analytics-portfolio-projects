@@ -4,7 +4,7 @@ A two-page Power BI report designed to evaluate sales performance, profitability
 
 The report combines an executive overview with a focused profitability analysis, allowing users to move from high-level business results to specific categories, countries, discount bands, and products requiring attention.
 
-## Table of Contents
+# Table of Contents
 
 - [Project Overview](#project-overview)
 - [Key Insights](#key-insights)
@@ -21,7 +21,7 @@ The report combines an executive overview with a focused profitability analysis,
 - [Performance](#performance)
 - [Data Source](#data-source)
 
-## Project Overview
+# Project Overview
 **The project was created to answer four main business questions:**    
 - How did sales, profit, margin, and order volume change over time?
 - Which markets and product categories generated the strongest results?
@@ -30,28 +30,30 @@ The report combines an executive overview with a focused profitability analysis,
 
 **The final report contains two pages:**
 
-`Executive Sales Overview`
-`Profitability Drivers`
-
+`Executive Sales Overview`    
+`Profitability Drivers`    
+  
 The first page provides a concise management-level summary of business performance. The second page supports a more detailed analysis of loss-making sales lines, discounts, countries, subcategories, and products.
 
 The dataset covers sales recorded between January 1, 2011, and December 31, 2014.
 
-## Key Insights
+# Key Insights
 
-- **Sales, profit, and order volume increased in every year covered by the dataset.** Sales grew from 2.26M in 2011 to 4.30M in 2014, while profit increased from 248.9K to 504.2K. Order volume rose from 4,516 to 8,868, while the annual profit margin remained relatively stable between 11.0% and 12.0%.
+- **Sales, profit, and order volume increased in every year covered by the dataset.**  
+Sales grew from **2.26M** in 2011 to **4.30M** in 2014, while profit increased from **248.9K** to **504.2K**. Order volume rose from **4,516** to **8,868**, while the annual profit margin remained relatively stable between **11.0%** and **12.0%.**
 
-- **Furniture combined high sales with substantially weaker profitability.** The category generated 4.11M in sales, approximately 323.6K more than Office Supplies, but delivered only 286.8K in profit compared with 518.5K for Office Supplies. Its 7.0% profit margin was almost half the 13.7% achieved by Office Supplies. Furniture also recorded the highest loss-making sales line rate at 31.55%, compared with 23.90% for Technology and 22.39% for Office Supplies.
+- **Furniture combined high sales with substantially weaker profitability.**  
+The category generated 4.11M in sales, approximately **323.6K more** than Office Supplies, but delivered only **286.8K in profit** compared with 518.5K for Office Supplies. Its 7.0% profit margin was almost half the 13.7% achieved by Office Supplies. Furniture also recorded the highest **loss-making sales line rate** at **31.55%**, compared with 23.90% for Technology and 22.39% for Office Supplies.
 
-- **Profitability declined sharply as discount levels increased.** Sales lines without a discount generated 6.99M in sales and 1.77M in profit at a 25.3% margin. In contrast, discount bands above 20% generated approximately 1.93M in sales but produced a combined loss of approximately 814.7K, equivalent to a margin of around -42.2%. The aggregated result became negative in the 20–30% discount band and deteriorated further at higher discount levels.
+- **Profitability declined sharply as discount levels increased.**  
+Sales lines without a discount generated 6.99M in sales and 1.77M in profit at a 25.3% margin. In contrast, discount bands above 20% generated approximately 1.93M in sales but produced a combined loss of approximately 814.7K, equivalent to a margin of around -42.2%. The aggregated result **became negative in the 20–30% discount band** and **deteriorated further at higher discount levels.**
 
-- **Country-level losses were heavily concentrated in Turkey and Nigeria, where every recorded sales line was unprofitable.** Together, the two countries generated 162.9K in sales but recorded a combined loss of 179.2K, resulting in an aggregated margin of approximately -110.0%. All 1,378 sales lines in Turkey fell within the 50–60% discount band, while all 905 sales lines in Nigeria fell within the 60–70% band. Their combined loss was almost twice the approximately 93.0K recorded across the next three lowest-profit countries: the Netherlands, Honduras, and Pakistan.
+- **Country-level losses were heavily concentrated in Turkey and Nigeria, where every recorded sales line was unprofitable.**  
+Together, the two countries generated 162.9K in sales but recorded a combined **loss of 179.2K**, resulting in an aggregated margin of approximately -110.0%. All 1,378 sales lines in Turkey fell within the 50–60% discount band, while all 905 sales lines in Nigeria fell within the 60–70% band. **Their combined loss was almost twice** the approximately 93.0K recorded across the next three lowest-profit countries: the Netherlands, Honduras, and Pakistan.
 
-These results describe relationships observed in the dataset. They should not be interpreted as proof that discount levels alone caused the recorded losses.
+# Report Preview
 
-## Report Preview
-
-### 1. Executive Sales Overview
+## 1. Executive Sales Overview
 
 ![Executive Sales Overview](images/01-executive-sales-overview.png)
 
@@ -64,7 +66,7 @@ The page presents:
 - Profit margin by market
 - Sales, profit, and margin by product category
 
-### 2. Profitability Drivers
+## 2. Profitability Drivers
 
 ![Profitability Drivers](images/02-profitability-drivers.png)
 
@@ -78,14 +80,14 @@ The page presents:
 - Sales, profit, and margin by product subcategory
 - A dynamic minimum sales-line threshold for the product ranking
 
-## Tools and Technologies
+# Tools and Technologies
 
 - **Power BI Desktop** for data modelling, DAX, report design, navigation, interactions, and performance testing
 - **Power Query** for data import, type conversion, validation, transformation, and key creation
 - **DAX** for sales, profit, margin, order, year-over-year, and loss-making sales line measures
 - **Performance Analyzer** for testing visual loading performance
 
-## Data Preparation
+# Data Preparation
 
 The source consists of one CSV file containing 51,290 sales lines and 21 source columns.
 
@@ -112,11 +114,11 @@ The final analytical model contains:
 - `_Measures`
 - `Minimum Sales Lines`
 
-## Data Quality Decisions
+# Data Quality Decisions
 
 Several source-data issues required explicit decisions.
 
-### Reused Order Identifiers
+## Reused Order Identifiers
 
 The source `order_id` was not globally unique:
 
@@ -130,7 +132,7 @@ Orders were therefore identified using the combination of:
 
 A numeric `OrderKey` was assigned to the resulting 25,754 identified orders.
 
-### Reused Product Identifiers
+## Reused Product Identifiers
 
 The source `product_id` did not uniquely identify every product name.
 
@@ -140,7 +142,7 @@ Products were identified using the combination of:
 
 A numeric `ProductKey` was assigned to 10,768 identified source product combinations.
 
-### Missing Values and Duplicates
+## Missing Values and Duplicates
 
 - No missing or blank values were identified in the source file.
 - No exact duplicate rows were found.
@@ -149,7 +151,7 @@ A numeric `ProductKey` was assigned to 10,768 identified source product combinat
 
 The repeated order-product combinations were retained because the dataset does not provide a reliable order-line identifier that would justify removing them.
 
-### Numeric and Date Validation
+## Numeric and Date Validation
 
 - All sales, quantity, discount, profit, and shipping cost values were converted without errors.
 - All order and shipping dates were converted successfully.
@@ -157,7 +159,7 @@ The repeated order-product combinations were retained because the dataset does n
 - The source year field was consistent with the year derived from the order date.
 - Negative profit values were retained as valid loss-making sales outcomes.
 
-## Data Model
+# Data Model
 
 The model separates order-level attributes, product attributes, daily calendar values, and line-level financial results.
 
@@ -177,15 +179,15 @@ The filter flow is:
 
 The `Minimum Sales Lines` parameter table is intentionally disconnected. Its selected value is used by a DAX measure that controls product eligibility in the lowest-profit product ranking.
 
-## Business Definitions
+# Business Definitions
 
-### 1. Sales Line
+## 1. Sales Line
 
 One row in `FactSales` represents one recorded product line within an identified order.
 
 Sales lines are not equivalent to orders because one order can contain multiple product lines.
 
-### 2. Order
+## 2. Order
 
 An order is identified using the combination of:
 
@@ -193,25 +195,25 @@ An order is identified using the combination of:
 
 A numeric `OrderKey` is assigned to each identified order and used by the `Total Orders` measure.
 
-### 3. Total Sales
+## 3. Total Sales
 
 The sum of the source `Sales` values recorded across sales lines in the current filter context.
 
 The source does not specify a currency, so the report does not apply a currency symbol.
 
-### 4. Total Profit
+## 4. Total Profit
 
 The sum of the source `Profit` values recorded across sales lines in the current filter context.
 
 Shipping cost is not subtracted again because the source documentation does not confirm whether shipping cost is already reflected in the provided profit value.
 
-### 5. Profit Margin
+## 5. Profit Margin
 
 `Total Profit / Total Sales`
 
 The measure evaluates profitability relative to sales value and can be negative when total profit is below zero.
 
-### 6. Loss-Making Sales Line
+## 6. Loss-Making Sales Line
 
 A sales line is classified as loss-making when:
 
@@ -219,13 +221,13 @@ A sales line is classified as loss-making when:
 
 Lines with zero profit are not classified as loss-making.
 
-### 7. Loss-Making Sales Line Rate
+## 7. Loss-Making Sales Line Rate
 
 `Loss-Making Sales Lines / Sales Lines`
 
 The measure represents the share of line-level sales records generating a negative profit. It does not represent the share of loss-making orders or products.
 
-### 8. Discount Band
+## 8. Discount Band
 
 Discounts are grouped into the following analytical ranges:
 
@@ -241,15 +243,15 @@ Discounts are grouped into the following analytical ranges:
 
 The highest ranges were combined into `Above 70%` because the original band above 80% contained only two sales lines and substantially distorted the visual scale.
 
-### 9. Eligible Product
+## 9. Eligible Product
 
 A product is eligible for the lowest-profit ranking when its number of sales lines is greater than or equal to the selected `Minimum Sales Lines` parameter value.
 
 The default threshold is five sales lines.
 
-## Key Measures
+# Key Measures
 
-### Core Performance
+## Core Performance
 
 - `Total Sales`
 - `Total Profit`
@@ -258,7 +260,7 @@ The default threshold is five sales lines.
 - `Total Quantity`
 - `Sales Lines`
 
-### Previous-Year Comparisons
+## Previous-Year Comparisons
 
 - `Sales Previous Year`
 - `Sales YoY Growth`
@@ -269,7 +271,7 @@ The default threshold is five sales lines.
 - `Profit Margin Previous Year`
 - `Profit Margin YoY Growth`
 
-### Loss-Making Sales Lines
+## Loss-Making Sales Lines
 
 - `Loss-Making Sales Lines`
 - `Loss-Making Sales Lines Previous Year`
@@ -278,12 +280,12 @@ The default threshold is five sales lines.
 - `Loss-Making Sales Lines YoY Growth`
 - `Loss-Making Sales Lines Rate YoY Growth`
 
-### Product Ranking and Controls
+## Product Ranking and Controls
 
 - `Eligible Product Profit`
 - `Minimum Sales Lines Value`
 
-### Full-History Validation Results
+## Full-History Validation Results
 
 - **Total Sales:** 12,642,905
 - **Total Profit:** 1,469,034.82
@@ -294,9 +296,9 @@ The default threshold is five sales lines.
 - **Loss-Making Sales Lines:** 12,543
 - **Loss-Making Sales Line Rate:** 24.46%
 
-## Report Pages
+# Report Pages
 
-### Executive Sales Overview
+## Executive Sales Overview
 
 The page is designed for a manager or director who needs a concise summary of business performance.
 
@@ -310,7 +312,7 @@ It includes:
 - Category-level sales, profit, and margin results
 - Market, segment, and year filters
 
-### Profitability Drivers
+## Profitability Drivers
 
 The page supports a more detailed investigation of low-profit and loss-making areas.
 
@@ -326,7 +328,7 @@ It includes:
 
 The product ranking uses `Eligible Product Profit` to select the five products with the lowest profit among products meeting the selected minimum sales-line threshold.
 
-## User Experience Features
+# User Experience Features
 
 - Two-page navigation using a page navigator
 - Reset button on each report page
@@ -345,7 +347,7 @@ The reset buttons restore:
 - Visual selections to the default state
 - `Minimum Product Sales Lines` to its default value of five
 
-## Limitations
+# Limitations
 
 - The dataset does not specify a currency, so monetary values are presented without a currency symbol.
 - Profit is used as supplied by the source. Shipping cost is not subtracted separately because the source does not confirm whether it is already included in the profit calculation.
@@ -357,7 +359,7 @@ The reset buttons restore:
 - The report uses customer names as source attributes and does not attempt to establish whether identical names always represent the same real-world customer.
 - Results describe the historical records included in the dataset and do not represent forecasts.
 
-## Performance
+# Performance
 
 The report was tested using Power BI Performance Analyzer.
 
@@ -368,7 +370,7 @@ All visuals loaded in under approximately 420 ms during testing. The two detaile
 
 No report visual required additional performance optimisation.
 
-## Data Source
+# Data Source
 
 This project uses the **SuperStore Sales Analytics** dataset published on Kaggle by Đào Minh Thuận.
 
