@@ -282,14 +282,14 @@ The default threshold is five sales lines.
 
 ## Full-History Validation Results
 
-- **Total Sales:** 12,642,905
-- **Total Profit:** 1,469,034.82
-- **Profit Margin:** 11.62%
-- **Total Orders:** 25,754
-- **Total Quantity:** 178,312
-- **Sales Lines:** 51,290
-- **Loss-Making Sales Lines:** 12,543
-- **Loss-Making Sales Line Rate:** 24.46%
+- **Total Sales:** 12 642 905
+- **Total Profit:** 1 469 034,82
+- **Profit Margin:** 11,62%
+- **Total Orders:** 25 754
+- **Total Quantity:** 178 312
+- **Sales Lines:** 51 290
+- **Loss-Making Sales Lines:** 12 543
+- **Loss-Making Sales Line Rate:** 24,46%
 
 # Report Pages
 
