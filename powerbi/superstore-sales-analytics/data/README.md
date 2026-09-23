@@ -10,9 +10,7 @@ This project uses the **SuperStore Sales Analytics** dataset published on Kaggle
  
 ## Included File
  
-- `SuperStoreOrders.csv`
- 
-The CSV file is included in its original downloaded form. Data cleaning, type conversion, validation, key creation, and analytical modelling were performed in Power Query and Power BI.
+The CSV file  `SuperStoreOrders.csv`  is included in its original downloaded form. Data cleaning, type conversion, validation, key creation, and analytical modelling were performed in Power Query and Power BI.
  
 ## Dataset Scope
  
@@ -29,5 +27,4 @@ The dataset includes information about:
 ## Attribution
  
 The dataset was not created by the author of this Power BI project. It is redistributed for analytical and portfolio purposes under the Apache License 2.0.
- 
 The Power BI data model, Power Query transformations, DAX measures, report design, business definitions, analysis, and documentation were created specifically for this portfolio project.
